@@ -443,7 +443,7 @@ def main():
             random_site['data']['email'] = f"{user_id}@example.com" 
             random_site['data']['message'] = random.choice(complaint_types[chosen_complaint_type]).format(user_id=user_id, user=user, id=id)
         send_data_to_server(random_site, proxies, random_site['data'].get('tg_feedback_appeal') or random_site['data']['message'], r
-      animate_sending(i + 1, request_count)
+        animate_sending(i + 1, request_count)
     input("Нажмите Enter для выхода...")    
 
 if __name__ == "__main__":
